@@ -1,0 +1,264 @@
+/* src/index.css or src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.faqwrap::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(6deg, #FF9950 0.25%, #FF9950 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask-composite: exclude;
+}
+
+.faqwrap1::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(6deg, #FF9950 0.25%, #FF9950 30.78%, #FFEDE0 70.41%, #FF9950 100.4%);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask-composite: exclude;
+}
+
+.faqwrap2::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(4deg, #FFEDE0 0.25%, #FF9950 30.78%, #FF9950 70.41%, #FF9950 100.4%);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask-composite: exclude;
+}
+
+.bdr::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 24px;
+    padding: 2px;
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask-composite: exclude;
+}
+
+
+.hlp::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 24px;
+    padding: 2px;
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask-composite: exclude;
+}
+.bdrhlp::before {
+    background: linear-gradient(266deg, #FF9950 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%);
+}
+.bdrhlp2::before {
+    background: linear-gradient(90deg, #FF9950 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%);
+}
+
+.gr1::before {
+    background: linear-gradient(140deg, #FFEDE0 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FF9950 100.4%);
+}
+
+.gr2::before {
+    background: linear-gradient(26deg, #FF9950 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%);
+}
+
+.gr3::before {
+    background: linear-gradient(220deg, #FF9950 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%);
+}
+
+.gr4::before {
+    background: linear-gradient(124deg, #FF9950 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%);
+}
+
+.mds2::before {
+    background: linear-gradient(274deg, #FFEDE0 -10.75%, #FF9950 30.78%, #FF9950 55.41%, #FFEDE0 115.4%);
+}
+
+.mds1::before {
+    background: linear-gradient(238deg, #FF9950 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%)
+}
+
+.mds3::before {
+    background: linear-gradient(51deg, #FF9950 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%)
+}
+
+.mds4::before {
+    background: linear-gradient(277deg, #FF9950 0.25%, #FFEDE0 30.78%, #FFEDE0 70.41%, #FFEDE0 100.4%)
+}
+
+.mds5::before {
+    background: linear-gradient(180deg, #FF9950 0.25%, #ffdfc9 30.78%, #ffdfc9 70.41%, #fffcfa 100.4%)
+}
+
+.mds6::before {
+    background: linear-gradient(332deg, #FF9950 10.25%, #fcc49c 20.78%, #fcc49c 20.41%, #FFEDE0 100.4%)
+}
+
+.madehdrsec::before,
+.madehdrsec::after,
+.wgtwrap::before,
+.wgtwrap::after {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    content: '';
+}
+
+.madehdrsec::before {
+    top: 0px;
+    right: -140px;
+    width: 143px;
+    height: 87px;    
+    background-image: url('../src/images/slim.png');
+}
+
+.madehdrsec::after {
+    bottom: 65px;    
+    left: -160px;
+    width: 199px;
+    height: 55px;
+    background-image: url('../src/images/fuel.png');
+}
+
+.wgtwrap::before {
+    top: -50px;
+    right: -60px;
+    width: 186px;
+    height: 52px;
+    background-image: url('../src/images/fastsmarter.png');
+}
+
+.wgtwrap::after {
+    bottom: -80px;
+    right: 15%;
+    width: 214px;
+    height: 42px;
+    background-image: url('../src/images/burn.png');
+}
+
+.hlpbdr::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 24px;
+    padding: 3px;
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+}
+.hlp1::before {
+    background: linear-gradient(50deg, #FFEDE0 0.25%, #FFEDE0 30.78%, #FF9950 70.41%, #FF9950 100.4%);
+}
+
+.hlp2::before {
+    background: linear-gradient(315deg, #FFEDE0 0.25%, #FFEDE0 30.78%, #FF9950 70.41%, #FF9950 100.4%);
+}
+
+.srch::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 42px;
+    padding: 2px;
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.srch1::before {
+    background: linear-gradient(50deg, #FFEDE0 0.25%, #FFEDE0 30.78%, #FF9950 70.41%, #FF9950 100.4%);
+}
+
+@media (max-width:992px){
+    .madehdrsec::before{
+        top: -40px;
+        right: 0;
+    }
+    .madehdrsec::after{
+        bottom:10px;
+        left: 0;
+    }
+    .wgtwrap::before{
+        right: 0;
+    }
+}
+.revw_box{
+    position: relative;
+}
+.revw_box::before {
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: #F8F5E2;
+    right: 0;
+    margin: auto;
+    transform: rotate(45deg);
+}
+@media(max-width: 768px){
+    .wgtwrap::after {
+        bottom: -10px;
+        right: 0px;
+    }
+}
+@media(max-width: 640px){
+    .madehdrsec::before{
+        top: -84px;
+        right: 0;
+    }
+}
+
+
+.abountrnd{
+    border-radius: 60px 0 60px 60px;
+}
+
+.wgtloss{
+    background: url(./images/wgtlossbg.png) no-repeat center;
+    background-size: cover;
+}
+
+
+@media(max-width: 450px){
+    .wgtloss{
+        background: none;
+    }
+}
