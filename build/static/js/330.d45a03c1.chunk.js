@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkketo=self.webpackChunkketo||[]).push([[330],{2330:(e,t,k)=>{k.r(t),k.d(t,{default:()=>a});k(2791);var o=k(7165),s=k(184);const a=()=>{window.location.href="https://bk.ketobalanced.com";return(0,s.jsx)(o.Z,{})}}}]);
+//# sourceMappingURL=330.d45a03c1.chunk.js.map
