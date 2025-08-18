@@ -1,5 +1,5 @@
 node {
-    def appDir = '/var/www/html3/nextjs-app'
+    def appDir = '/var/www/html3/reactjs-app'
 
     stage('Clean Workspace'){
         echo 'Cleaning Jenkins Workspace'
@@ -23,6 +23,7 @@ node {
             rsync -av --delete --exclude='.git' --exclude='node_modules' ./ ${appDir}
 
             cd ${appDir}
+            sudo apt-get install apache2 
             sudo npm install
             sudo npm run build
             sudo fuser -k 3000/tcp || true
