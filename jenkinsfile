@@ -1,5 +1,5 @@
 node {
-    def appDir = '/var/www/html3/reactjs-app'
+    def appDir = '/var/www/reactjs-app'
 
     stage('Clean Workspace'){
         echo 'Cleaning Jenkins Workspace'
@@ -23,12 +23,24 @@ node {
             rsync -av --delete --exclude='.git' --exclude='node_modules' ./ ${appDir}
 
             cd ${appDir}
-            sudo apt-get install apache2 
             sudo npm install
             sudo npm run build
-            sudo fuser -k 3000/tcp || true
-            npm run start
+
+            # Install PM2 if not installed
+            if ! command -v pm2 > /dev/null; then
+                sudo npm install -g pm2
+            fi
+
+            # Stop old process if running
+            pm2 stop nextjs-app || true
+            pm2 delete nextjs-app || true
+
+            # Start app with PM2
+            pm2 start npm --name "nextjs-app" -- run start
+
+            # Save process list & enable startup on reboot
+            pm2 save
+            pm2 startup systemd -u jenkins --hp /home/jenkins
         """
     }
 }
-
